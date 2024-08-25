@@ -33,12 +33,8 @@ module Api
 
       def delete(id)
         @use_case.delete_item(id)
-        # Apresenta a resposta usando um presenter
+        # Apresenta a resposta usando um presenter com message
       end
     end
-
-    private
-
-
   end
 end
