@@ -28,7 +28,7 @@ module Api
       def update(id, params)
         item = Item.new(params)
         @use_case.update_item(id, item)
-        # Apresenta a resposta usando um presenter
+        # Apresenta a resposta usando um presenter com message
       end
 
       def delete(id)
