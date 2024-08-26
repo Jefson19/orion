@@ -22,7 +22,7 @@ module Api
       def create(params)
         item = Item.new(params)
         @use_case.create_item(item)
-        # Apresenta a resposta usando um presenter
+        # Apresenta a resposta usando um presenter com message
       end
 
       def update(id, params)
